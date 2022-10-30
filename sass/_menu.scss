@@ -1,7 +1,32 @@
-//Menu Button
-
-.menu-btn {
+// header
+header {
+  background: transparent;
   position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 5rem;
+}
+
+//Menu Logo
+.logo {
+  position: absolute;
+  z-index: 900;
+  height: 80% !important;
+  left: 5px;
+  top: 20px;
+
+  img {
+    width: 50px;
+    object-fit: cover;
+  }
+}
+//Menu Button
+.menu-btn {
+  border-radius: 50%;
+  width:3rem;
+  height: 3rem;
+  background: $primary-gradient !important;
+  position: fixed;
   z-index: 3;
   right: 40px;
   top: 20px;
@@ -38,7 +63,6 @@
 }
 
 //Menu Overlay
-
 .menu {
   position: fixed;
   top: 0;
@@ -66,7 +90,7 @@
     opacity: 0.97;
     margin: 0;
     padding: 0;
-    background: $primary;
+    background: $primary-gradient;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     
@@ -111,7 +135,6 @@
 }
 
 // Delay each nav item slide by 0.1s
-
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.15s;

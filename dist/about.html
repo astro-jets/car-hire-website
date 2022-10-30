@@ -12,23 +12,44 @@
     <title>P&G</title>
 </head>
 <body>
+    <!-- Header section -->
+    <header>
+        <div class="logo w-10 flex ac jc" id="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+    
+        <div class="menu-btn flex f-col ac jc">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+    
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="cars.html" class="nav-link">cars</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="contacts.html" class="nav-link">contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header section end-->
     <main class="container">
-        <!-- Header section -->
-        <header class="w-100 flex ac">
-            <div class="title w-30">
-                <h1>P&G Car Hire</h1>
-            </div>
-            
-             <nav class="nav-bar w-40 flex">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="cars.html">Cars</a></li>
-                <li><a href="contacts.html">Contact us</a></li>
-             </nav>
-        </header>
-        <!-- Header section end-->
-
         <section class="video-section flex ac jc w-100 mt-10">
             <div class="about-us w-30 flex ac f-col"  data-aos="fade-right">
                 <h3>Welcome to P&G</h3>
@@ -122,8 +143,8 @@
         </footer>
     </main>
 
+    <script src="js/main.js"></script>
     <script src="aos/aos.js"></script>
-
     <script>
         AOS.init({
             offset:200,

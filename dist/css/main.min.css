@@ -134,12 +134,6 @@ li {
   overflow: hidden;
 }
 
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
 .hero {
   height: 160vh;
   overflow: hidden;
@@ -464,7 +458,7 @@ header {
 
 .video-section .video .play-section {
   position: absolute;
-  left: 65%;
+  left: 50%;
 }
 
 .video-section .video .play-section .btn-play {
@@ -976,6 +970,12 @@ header {
   margin: 0 1rem;
 }
 
+.footer .tab-1 .brand-logo img {
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer .tab-1 p {
   line-height: 2rem;
   text-align: justify;
@@ -1039,11 +1039,12 @@ header {
   main.container {
     width: 100% !important;
   }
-  header .title {
-    width: 70%;
+  header {
+    top: 0 !important;
+    height: 4rem !important;
   }
-  header .title h1 {
-    font-size: 20px;
+  header .logo {
+    width: 20% !important;
   }
   .hero {
     height: 200vh !important;
@@ -1215,6 +1216,53 @@ header {
   .offered-services .offered-services-list .offered-service {
     margin: 2rem 0;
   }
+  .offered-services-2 {
+    height: 310vh !important;
+    padding: 0 !important;
+  }
+  .offered-services-2 .offered-services-list {
+    width: 100% !important;
+    height: 300vh !important;
+  }
+  .offered-services-2 .offered-services-list .offered-service {
+    height: 70vh !important;
+  }
+  .offered-services-2 .offered-services-list .offered-service .top-details {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .offered-services-2 .offered-services-list .offered-service .top-details .service-icon-cover {
+    margin-right: 0;
+    width: 100% !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offered-services-2 .offered-services-list .offered-service .top-details .service-icon-cover .service-icon {
+    height: 100%;
+    width: 50%;
+  }
+  .offered-services-2 .offered-services-list .offered-service .top-details .service-description {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .video-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1244,81 +1292,130 @@ header {
     width: 90%;
   }
   .contact-form {
-    height: 105vh;
+    width: 100% !important;
+    height: 130vh;
   }
   .contact-form .contact-details {
     margin-right: 4rem;
   }
   .contact-form .contact-details .contact-detail {
     margin: 1rem 0;
-    height: 10rem;
-    background: linear-gradient(45deg, orangered, red);
-    font-size: 1.5rem;
-    border-radius: 30px;
-    border: #c7c3c3 1px solid;
-    padding: 1rem;
-    color: #fff !important;
-    -webkit-box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.1);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
   }
   .contact-form .contact-details .contact-detail span {
     margin-right: 10%;
-    font-size: 2.1rem;
   }
   .contact-form .contact-details .contact-detail:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
   .contact-form .form {
-    height: 100%;
-    -webkit-box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
+    width: 100% !important;
   }
-  .contact-form .form h2 {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin: 2rem 0 1rem 0;
-  }
-  .contact-form .form span {
-    color: orangered;
+  .contact-form .form form {
+    width: 100% !important;
   }
   .contact-form .form form .label-box {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    width: 100% !important;
     margin-top: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .contact-form .form form .label-box label span {
-    margin-left: 0.8rem;
-    font-size: 1.1rem;
+  .contact-form .form form .input-box:first-child {
+    margin-bottom: 5rem;
   }
-  .contact-form .form form input {
-    margin-top: 1rem;
-    border: 0 !important;
-    border-bottom: 1px solid orangered !important;
-    color: #fff !important;
-    background: none !important;
+  .contact-form .form form .input-box:first-child input {
+    margin-top: 3rem;
   }
   .contact-form .form form textarea {
-    margin-top: 1rem;
-    border: 1px solid orangered;
-    border-radius: 30px;
+    width: 85% !important;
   }
   .contact-form .form form button {
-    height: 50px;
-    border-radius: 10px;
-    background: orangered;
-    border: 0;
-    margin-top: 3rem;
-    color: #fff !important;
+    width: 80% !important;
+  }
+  .contact-form.mobile {
+    height: 250vh;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .contact-form.mobile .contact-details {
+    margin-bottom: 15rem;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    width: 100%;
+  }
+  .contact-form.mobile .contact-details .contact-detail {
+    width: 90%;
+  }
+  footer.footer {
+    height: 50vh !important;
+  }
+  footer.footer .tab:nth-child(2) {
+    display: none !important;
+  }
+  footer.footer .tab:nth-child(3) {
+    display: none !important;
+  }
+  footer.footer .tab:nth-child(4) {
+    display: none !important;
+  }
+  footer.footer .tab-1 {
+    width: 80% !important;
+  }
+  footer.footer .tab-1 .company-desc {
+    width: 100% !important;
+  }
+  footer.footer .tab-1 .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .hide-lg {
     display: block !important;
   }
 }
 
-.menu-btn {
+header {
+  background: transparent;
   position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 5rem;
+}
+
+.logo {
+  position: absolute;
+  z-index: 900;
+  height: 80% !important;
+  left: 5px;
+  top: 20px;
+}
+
+.logo img {
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-btn {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(45deg, orangered, red) !important;
+  position: fixed;
   z-index: 3;
   right: 40px;
   top: 20px;
@@ -1392,7 +1489,7 @@ header {
   opacity: 0.97;
   margin: 0;
   padding: 0;
-  background: orangered;
+  background: linear-gradient(45deg, orangered, red);
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);

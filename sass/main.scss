@@ -10,13 +10,6 @@
     overflow: hidden;
 }
 
-
-header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-  }
-
 .hero{
     height: 160vh;
     overflow: hidden;
@@ -260,7 +253,7 @@ header {
         }
         .play-section{
             position: absolute;
-            left: 65%;
+            left: 50%;
             .btn-play {
                 cursor: pointer;
                 position: relative;
@@ -609,6 +602,10 @@ header {
         &-1{
             .brand-logo{
                 img,h1{margin: 0 1rem;}
+                img {
+                    width: 50px;
+                    object-fit: cover;
+                }
             }
             p{
                 line-height: 2rem;
