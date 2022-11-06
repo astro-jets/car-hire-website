@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image no-repeat;
+      //background-attachment: fixed;
+      background-size: cover;
+      background-position: 0 -25rem; // /*For smart phones*/ -6rem 0;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 120%;
+        background: rgba(19, 0, 0, 0.548);
+        z-index: -1;
+      }
+    }
+  }
+}
+
+//set text color
+@function set-text-color($color) {
+  @if (lightness($color) >40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+a{text-decoration: none;}
+li{list-style: none;}
+//Width
+.w{
+    &-100{width: 100%;}
+    &-90{width: 90%;}
+    &-80{width: 80%;}
+    &-70{width: 70%;}
+    &-60{width: 60%;}
+    &-50{width: 50%;}
+    &-40{width: 40%;}
+    &-30{width: 30%;}
+    &-20{width: 20%;}
+    &-10{width: 10%;}
+}
+
+//Height
+.h{
+    &-100{height: 100%;}
+    &-90{height: 90%;}
+    &-80{height: 80%;}
+    &-70{height: 70%;}
+    &-60{height: 60%;}
+    &-50{height: 50%;}
+    &-30{height: 40%;}
+    &-30{height: 30%;}
+    &-20{height: 20%;}
+    &-10{height: 10%;}
+}
+
+//margin
+.m{
+    &t{
+        &-10{
+            margin-top : 10rem;
+        }
+    }
+}
+
+//Flex Box
+.flex{
+    display: flex;
+    &.f-col{flex-direction: column;}
+    &.jc{justify-content: center;}
+    &.ac{align-items: center;}
+
+}
+
+
+//Media Query Mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaMd {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      @content;
+    }
+  }
+  
+  @mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+      @content;
+    }
+  }
+  

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is the single car page -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="aos/aos.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>P&G</title>
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+        <div class="logo w-10 flex ac jc" id="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <div class="menu-btn flex f-col ac jc">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="cars.html" class="nav-link">cars</a>
+                </li>
+
+                <li class="nav-item current">
+                    <a href="contacts.html" class="nav-link">contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header section end-->
+
+    <main class="container mt-10">
+        <!-- Car Gallery section -->
+        <section class="car-gallery-single car-gallery-cover w-100 flex f-col ac jc" data-aos="fade-left">
+
+            <h2>Mercedes Benz Kompressor</h2>
+            <span>2005 Model.</span>
+
+            <div class="car-gallery">
+                <div class="car-slide w-100 flex f-col ac jc">
+                    <img src="images/car-1.jpg" alt="">
+                    <div class="body w-100 flex f-col ac jc">
+
+
+                        <div class="w-80 flex buttons">
+                            <button class="booking-btn first w-40"> Book </button>
+
+                            <button class="booking-btn first w-40"> Book </button>
+                            
+                            <button class="booking-btn first w-40"> Book </button>
+
+                            <button class="booking-btn w-40"> Details </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Car Gallery section end-->
+
+        <footer class="footer w-100 flex">
+
+            <div class=" tab tab-1 flex f-col w-30">
+                <div class="brand-logo flex w-100">
+                    <img src="images/logo.png" alt="">
+                    <h1>J&C Car hire</h1>
+                </div>
+
+                <p class="w-80">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vel eum recusandae! Aperiam modi
+                    alias numquam vitae assumenda illum officiis.
+                </p>
+
+                <div class="social-links flex w-100">
+                    <div class="logo-cover flex ac jc  w-100"><span class="icon icon-facebook"></span></div>
+                    <div class="logo-cover flex ac jc  w-100"><span class="icon icon-instagram"></span></div>
+                    <div class="logo-cover flex ac jc  w-100"><span class="icon icon-twitter"></span></div>
+                </div>
+            </div>
+
+            <div class=" tab tab-2 flex f-col w-20">
+                <h2>Links</h2>
+
+                <div class="links flex f-col w-40">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Cars</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+            </div>
+
+            <div class=" tab tab-3 flex f-col w-20">
+                <h2>24/7 Customer Care</h2>
+                <div class="links flex f-col w-40">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Cars</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+            </div>
+
+            <div class=" tab tab-4 flex f-col ">
+                <h2>Got any quetsion?</h2>
+                <div class="links flex f-col w-100">
+                    <li class="w-100">
+                        <a href="#" class="flex ac w-100">
+                            <i class="icon icon-phone w-20"></i>
+                            <p class="w-80">+265 886 007 474</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex ac w-100">
+                            <i class="icon icon-map-marker w-20"></i>
+                            <p class="w-80">Lilongwe, Likuini Hospital</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex ac">
+                            <i class="icon icon-envelope w-20"></i>
+                            <p class="w-80">jnccarhire@gmail.com</p>
+                        </a>
+                    </li>
+                </div>
+            </div>
+
+        </footer>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="aos/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+            easing: 'ease-in-out',
+            anchorPlacement: 'top-bottom',
+            mirror: true
+        });
+    </script>
+</body>
+
+</html>
