@@ -137,20 +137,11 @@
                     }
                 }
             }
-        } 
-        
-        &.car-gallery-cover-2 {
-            height: calc(13*450px) !important;
-            .car-gallery-2 {
-                display: flex;
-                flex-direction: column;
-                height: 100% !important;
-                .car-slide {
-                    margin: 0 !important;
-                    height: 400px !important;
-                }
+
+            &.car-gallery-2{
+                height: 300vh;
             }
-        }
+        }   
     }
     
     .offered-services{

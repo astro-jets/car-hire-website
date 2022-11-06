@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- This is the single car page -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,76 +11,52 @@
     <link rel="stylesheet" href="css/main.min.css">
     <title>P&G</title>
 </head>
-
 <body>
+    <main class="container">
+        <header class="w-100 flex ac">
+            <div class="title w-30">
+                <h1>P&G Car Hire</h1>
+            </div>
+            
+             <nav class="nav-bar w-40 flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Contact us</a></li>
+             </nav>
+        </header>
 
-    <!-- Header section -->
-    <header>
-        <div class="logo w-10 flex ac jc" id="logo">
-            <img src="images/logo.png" alt="">
-        </div>
+        <div class="car-details flex f-col ac jc w-100">
 
-        <div class="menu-btn flex f-col ac jc">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
+            <div class="car-image w-90">
+                <img src="images/car-1.jpg" alt="">
+            </div>
+            <h1>Mereceds Benz Komressor</h1>
 
-        <nav class="menu">
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Us</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="services.html" class="nav-link">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="cars.html" class="nav-link">cars</a>
-                </li>
-
-                <li class="nav-item current">
-                    <a href="contacts.html" class="nav-link">contacts</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Header section end-->
-
-    <main class="container mt-10">
-        <!-- Car Gallery section -->
-        <section class="car-gallery-single car-gallery-cover w-100 flex f-col ac jc" data-aos="fade-left">
-
-            <h2>Mercedes Benz Kompressor</h2>
-            <span>2005 Model.</span>
-
-            <div class="car-gallery">
-                <div class="car-slide w-100 flex f-col ac jc">
-                    <img src="images/car-1.jpg" alt="">
-                    <div class="body w-100 flex f-col ac jc">
-
-
-                        <div class="w-80 flex buttons">
-                            <button class="booking-btn first w-40"> Book </button>
-
-                            <button class="booking-btn first w-40"> Book </button>
-                            
-                            <button class="booking-btn first w-40"> Book </button>
-
-                            <button class="booking-btn w-40"> Details </button>
-                        </div>
-                    </div>
+            <div class="car-features flex ac jc w-90">
+                <div class="feature w-20">
+                    <span class="flaticon-dashoard"></span>
                 </div>
 
-            </div>
-        </section>
-        <!-- Car Gallery section end-->
+                <div class="feature w-20">
+                    <span class="flaticon-pistons"></span>
+                </div>
 
+                <div class="feature w-20">
+                    <span class="flaticon-car-seat"></span>
+                </div>
+
+                <div class="feature w-20">
+                    <span class="flaticon-backpack"></span>
+                </div>
+
+                <div class="feature w-20">
+                    <span class="flaticon-diesel"></span>
+                </div>
+            </div>
+        </div>
+        
         <footer class="footer w-100 flex">
 
             <div class=" tab tab-1 flex f-col w-30">
@@ -91,8 +66,7 @@
                 </div>
 
                 <p class="w-80">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vel eum recusandae! Aperiam modi
-                    alias numquam vitae assumenda illum officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vel eum recusandae! Aperiam modi alias numquam vitae assumenda illum officiis.
                 </p>
 
                 <div class="social-links flex w-100">
@@ -149,18 +123,17 @@
 
         </footer>
     </main>
-    <script src="js/main.js"></script>
+
     <script src="aos/aos.js"></script>
 
     <script>
         AOS.init({
-            offset: 200,
-            duration: 1000,
+            offset:200,
+            duration:1000,
             easing: 'ease-in-out',
-            anchorPlacement: 'top-bottom',
-            mirror: true
+            anchorPlacement:'top-bottom',
+            mirror:true
         });
     </script>
 </body>
-
 </html>
